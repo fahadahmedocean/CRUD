@@ -99,9 +99,13 @@ a {
           transform-origin: center left;
 }
 .panel__wrap .panel__box:last-child input[type="submit"] {
-  background: none;
-  border: 1px solid #A5E434;
-  color: #A5E434;
+  float: right;
+  cursor: pointer;
+  border: none;
+  padding: 11px 40px;
+  background: #A5E434;
+  border-radius: 30px;
+  color: #fff;
 }
 .panel__wrap .panel__box:last-child.active {
   -webkit-animation: box-2 0.5s;

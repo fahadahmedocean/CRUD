@@ -39,16 +39,19 @@
      <label>Password
        <input type="password"/>
      </label>
-     <input type="submit"/>
+     <input type="submit" value="Login"/>
    </div>
 
 
-   <div class="panel__box" id="signUpBox">
+  <div class="panel__box" id="signUpBox">
      <label>Name
        <input type="text"/>
      </label>
      <label>ID
      <input type="text"/>
+     </label>
+     <label>District
+       <input type="email"/>
      </label>
      <label>Email
        <input type="email"/>
@@ -56,10 +59,7 @@
      <label>Password
        <input type="password"/>
      </label>
-     <label>Confirm password
-       <input type="password"/>
-     </label>
-     <input type="submit"/>
+     <input type="submit" value="Register"/>
    </div>
  </div>
 </div>
