@@ -10,26 +10,24 @@
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="logindesign/images/icons/favicon.ico"/>
+
+
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/vendor/animate/animate.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="logindesign/css/util.css">
     <link rel="stylesheet" type="text/css" href="logindesign/css/main.css">
     <!--===============================================================================================-->
+
+
 </head>
 <body>
-
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
@@ -37,7 +35,7 @@
                 <img src="logindesign/images/img-01.png" alt="IMG">
             </div>
 
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" action="registration.jsp" method="post">
 					<span class="login100-form-title" style="color:darkmagenta">
 						 Login
 					</span>
@@ -89,12 +87,9 @@
 
 <!--===============================================================================================-->
 <script src="logindesign/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
 <script src="logindesign/vendor/bootstrap/js/popper.js"></script>
 <script src="logindesign/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
 <script src="logindesign/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
 <script src="logindesign/vendor/tilt/tilt.jquery.min.js"></script>
 <script >
     $('.js-tilt').tilt({
@@ -103,6 +98,7 @@
 </script>
 <!--===============================================================================================-->
 <script src="logindesign/js/main.js"></script>
+
 
 </body>
 </html>
