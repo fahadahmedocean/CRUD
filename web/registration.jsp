@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>bootstrap form validation</title>
+    <title>Registration form </title>
 
 
     <!--===============================================================================================-->
@@ -23,10 +23,31 @@
     <link href="regdesign/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <link href="regdesign/css/style.css" rel="stylesheet" type="text/css" />
 
+
     <!--===============================================================================================-->
+
+
 </head>
 
-<body>
+<body oncontextmenu="return false">
+
+
+<fieldset style="width: 40%; /* or a percentage, or whatever */
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            color: red ;
+            font-weight: bold">
+
+    <!-- Form Name -->
+    <legend style=" /* or a percentage, or whatever */
+           margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            color: red ;
+            font-weight: 500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personal Information </legend>
+</fieldset>
+
 <div class="container">
     <div class="col-lg-9">
         <br>
@@ -44,18 +65,14 @@
 
 
         <form class="form-horizontal" action=" " method="post"  id="reg_form">
-            <fieldset>
-
-                <!-- Form Name -->
-                <legend> Personal Information </legend>
 
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">First Name</label>
+                    <label class="col-md-4 control-label">Name</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                            <input  name="first_name" placeholder="Full Name" class="form-control"  type="text">
                         </div>
                     </div>
                 </div>
@@ -63,10 +80,10 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label" >Last Name</label>
+                    <label class="col-md-4 control-label" >ID No.</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <input name="last_name" placeholder="ID" class="form-control"  type="text">
                         </div>
                     </div>
                 </div>
@@ -75,14 +92,30 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>
+                    <label class="col-md-4 control-label">Mobile</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input name="phone" placeholder="Start with +8801/ 8801/ 01" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
 
+                <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Department</label>
+                <div class="col-md-6 selectContainer">
+                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
+                        <select name="state" class="form-control selectpicker" >
+                            <option value=" " >Please select your Dept.</option>
+                            <option>ICT</option>
+                            <option>CSE</option>
+                            <option >TEX</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
                 <!-- Text input-->
 
                 <div class="form-group">
@@ -94,35 +127,7 @@
                     </div>
                 </div>
 
-                <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label">City</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="city" placeholder="city" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Select Basic -->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">State</label>
-                    <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            <select name="state" class="form-control selectpicker" >
-                                <option value=" " >Please select your state</option>
-                                <option>Alabama</option>
-                                <option>Alaska</option>
-                                <option >Arizona</option>
-                                <option >Arkansas</option>
-                                <option >California</option>
-
-                            </select>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Text input-->
 
@@ -135,21 +140,8 @@
                     </div>
                 </div>
 
-                <!-- Text area -->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">About </label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea class="form-control" name="comment" placeholder="About "></textarea>
-                        </div>
-                    </div>
-                </div>
 
 
-            </fieldset>
-            <legend> Account information </legend>
-            <fieldset>
                 <!-- Text input-->
                 <div class="form-group">
                     <label class="col-md-4 control-label">E-Mail</label>
@@ -166,7 +158,7 @@
                         Password
                     </label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control" id="userPw" type="password" placeholder="password"
                                    name="password" data-minLength="5"
                                    data-error="some error"
@@ -182,7 +174,7 @@
                         Confirm Password
                     </label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                             <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password"
                                    name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
                                    data-match-error="some error 2"
@@ -197,11 +189,15 @@
                 <!-- Button -->
                 <div class="form-group">
                     <label class="col-md-4 control-label"></label>
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                    <div class="col-md-4 center-block">
+
+                        <button type="reset" class="btn btn-lg btn-warning">Reset  <span class="glyphicon glyphicon-repeat"></span></button>
+                        <button type="submit" class="btn btn-lg btn-primary">Register <span class="glyphicon glyphicon-send"></span></button>
+
+
                     </div>
                 </div>
-            </fieldset>
+
         </form>
     </div>
 
@@ -259,32 +255,29 @@
                             min: 2,
                         },
                         notEmpty: {
-                            message: 'Please supply your first name'
+                            message: 'Please provide your name'
                         }
                     }
                 },
                 last_name: {
                     validators: {
                         stringLength: {
-                            min: 2,
+                            min: 5,
                         },
                         notEmpty: {
-                            message: 'Please supply your last name'
+                            message: 'Please provide your ID in 5 digit(13021)'
                         }
                     }
                 },
-
                 phone: {
                     validators: {
                         notEmpty: {
                             message: 'Please supply your phone number'
                         },
-                        phone: {
-                            country: 'US',
-                            message: 'Please supply a vaild phone number with area code'
-                        }
+
                     }
                 },
+
                 address: {
                     validators: {
                         stringLength: {
@@ -308,7 +301,7 @@
                 state: {
                     validators: {
                         notEmpty: {
-                            message: 'Please select your state'
+                            message: 'Please select your Dept.'
                         }
                     }
                 },
@@ -323,18 +316,7 @@
                         }
                     }
                 },
-                comment: {
-                    validators: {
-                        stringLength: {
-                            min: 10,
-                            max: 200,
-                            message:'Please enter at least 10 characters and no more than 200'
-                        },
-                        notEmpty: {
-                            message: 'Please supply a description about yourself'
-                        }
-                    }
-                },
+
                 email: {
                     validators: {
                         notEmpty: {

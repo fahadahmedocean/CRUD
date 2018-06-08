@@ -27,7 +27,8 @@
 
 
 </head>
-<body>
+<body oncontextmenu="return true">
+
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
@@ -36,7 +37,7 @@
             </div>
 
             <form class="login100-form validate-form" action="registration.jsp" method="post">
-					<span class="login100-form-title" style="color:darkmagenta">
+					<span class="login100-form-title" style="color:darkmagenta; font-size: 50px; font-weight: bold">
 						 Login
 					</span>
 
@@ -71,9 +72,9 @@
                     </a>
                 </div>
 
-                <div class="text-center p-t-136">
-                    <a class="txt2" href="#">
-                        Create your Account
+                <div class="text-center p-t-60">
+                    <a class="txt2" href="registration.jsp">
+                        Create New Account
                         <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                     </a>
                 </div>
