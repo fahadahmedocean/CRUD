@@ -12,7 +12,15 @@ public class ServiceClass extends ConnectionClass {
 
         String sql = "INSERT INTO regtable VALUES(?,?, ?, ?, ?, ?, ?, ?, ?)";
         try {
-
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, name);
+            ps.setInt(2,roll_id);
+            ps.setInt(3, mobile);
+            ps.setString(4, dept);
+            ps.setString(5, address);
+            ps.setInt(6,zip);
+            ps.setString(7, email);
+            ps.setString(8, pass);
 
             ps.executeUpdate();
             ps.close();
