@@ -18,6 +18,9 @@ public class Model {
     private  String email;
     private  String password;
 
+    public Model() {
+    }
+
     public Model(String name, int roll_id, int mobile, String dept, String addres, int zip, String email, String password) {
         this.name = name;
         this.roll_id = roll_id;

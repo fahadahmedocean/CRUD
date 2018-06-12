@@ -1,5 +1,5 @@
-package webapp;
-
+package webapp.controller;
+import webapp.controller.ServiceClass;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +15,16 @@ public class LoginServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("email");
+        String roll_id = request.getParameter("pass");
+        Integer roll= Integer.valueOf(roll_id);
+
+
         PrintWriter out = response.getWriter();
       out.print("Login-Email : "+request.getParameter("email") + "  Password : "+request.getParameter("pass"));
+
+       ServiceClass sc=new ServiceClass();
+       sc.InsertDb(name,roll);
 
     }
 }

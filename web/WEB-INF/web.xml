@@ -11,7 +11,7 @@
 
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>webapp.LoginServlet</servlet-class>
+    <servlet-class>webapp.controller.LoginServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
