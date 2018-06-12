@@ -19,9 +19,9 @@
 
 
     <!--===============================================================================================-->
-    <link href="regdesign/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="regdesign/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-    <link href="regdesign/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="regdesign/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="regdesign/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="regdesign/css/style.css" rel="stylesheet" type="text/css"/>
 
 
     <!--===============================================================================================-->
@@ -45,7 +45,9 @@
             margin-left: auto;
             margin-right: auto;
             color: red ;
-            font-weight: 500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personal Information </legend>
+            font-weight: 500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personal
+        Information
+    </legend>
 </fieldset>
 
 <div class="container">
@@ -64,139 +66,149 @@
         <br>
 
 
-        <form class="form-horizontal" action=" " method="post"  id="reg_form">
+        <form class="form-horizontal" action="/RegestrationServlet" method="post" id="reg_form">
 
-                <!-- Text input-->
+            <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Name</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="Full Name" class="form-control"  type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Name</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-user"></i></span>
+                        <input name="first_name" placeholder="Full Name" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <!-- Text input-->
+            <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label" >ID No.</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            <input name="last_name" placeholder="ID" class="form-control"  type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">ID No.</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-list"></i></span>
+                        <input name="last_name" placeholder="ID" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
 
-                <!-- Text input-->
+            <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Mobile</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input name="phone" placeholder="Start with +8801/ 8801/ 01" class="form-control" type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Mobile</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-phone"></i></span>
+                        <input name="phone" placeholder="Start with +8801/ 8801/ 01" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
-                <!-- Text input-->
+            <!-- Text input-->
 
             <div class="form-group">
                 <label class="col-md-4 control-label">Department</label>
                 <div class="col-md-6 selectContainer">
-                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
-                        <select name="state" class="form-control selectpicker" >
-                            <option value=" " >Please select your Dept.</option>
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-education"></i></span>
+                        <select name="state" class="form-control selectpicker">
+                            <option value=" ">Please select your Dept.</option>
                             <option>ICT</option>
                             <option>CSE</option>
-                            <option >TEX</option>
+                            <option>TEX</option>
 
                         </select>
                     </div>
                 </div>
             </div>
-                <!-- Text input-->
+            <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Address</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="address" placeholder="Address" class="form-control" type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Address</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-home"></i></span>
+                        <input name="address" placeholder="Address" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
 
+            <!-- Text input-->
 
-                <!-- Text input-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Zip Code</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-                        </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Zip Code</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-home"></i></span>
+                        <input name="zip" placeholder="Zip Code" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
 
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">E-Mail</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                        </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail</label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
                     </div>
                 </div>
+            </div>
 
 
-                <div class="form-group has-feedback">
-                    <label for="password"  class="col-md-4 control-label">
-                        Password
-                    </label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input class="form-control" id="userPw" type="password" placeholder="password"
-                                   name="password" data-minLength="5"
-                                   data-error="some error"
-                                   required/>
-                            <span class="glyphicon form-control-feedback"></span>
-                            <span class="help-block with-errors"></span>
-                        </div>
+            <div class="form-group has-feedback">
+                <label for="password" class="col-md-4 control-label">
+                    Password
+                </label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control" id="userPw" type="password" placeholder="password"
+                               name="password" data-minLength="5"
+                               data-error="some error"
+                               required/>
+                        <span class="glyphicon form-control-feedback"></span>
+                        <span class="help-block with-errors"></span>
                     </div>
                 </div>
+            </div>
 
-                <div class="form-group has-feedback">
-                    <label for="confirmPassword"  class="col-md-4 control-label">
-                        Confirm Password
-                    </label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password"
-                                   name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
-                                   data-match-error="some error 2"
-                                   required/>
-                            <span class="glyphicon form-control-feedback"></span>
-                            <span class="help-block with-errors"></span>
-                        </div>
+            <div class="form-group has-feedback">
+                <label for="confirmPassword" class="col-md-4 control-label">
+                    Confirm Password
+                </label>
+                <div class="col-md-6  inputGroupContainer">
+                    <div class="input-group"><span class="input-group-addon"><i
+                            class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control {$borderColor}" id="userPw2" type="password"
+                               placeholder="Confirm password"
+                               name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                               data-match-error="some error 2"
+                               required/>
+                        <span class="glyphicon form-control-feedback"></span>
+                        <span class="help-block with-errors"></span>
                     </div>
                 </div>
+            </div>
 
 
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
-                    <div class="col-md-4 center-block">
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4 center-block">
 
-                        <button type="reset" class="btn btn-lg btn-warning">Reset  <span class="glyphicon glyphicon-repeat"></span></button>
-                        <button type="submit" class="btn btn-lg btn-primary">Register <span class="glyphicon glyphicon-send"></span></button>
+                    <button type="reset" class="btn btn-lg btn-warning">Reset <span
+                            class="glyphicon glyphicon-repeat"></span></button>
+                    <button type="submit" class="btn btn-lg btn-primary">Register <span
+                            class="glyphicon glyphicon-send"></span></button>
 
 
-                    </div>
                 </div>
+            </div>
 
         </form>
     </div>
@@ -240,7 +252,7 @@
 <script src="js/index.js"></script>
 <script type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#reg_form').bootstrapValidator({
             // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
             feedbackIcons: {
@@ -281,7 +293,7 @@
                 address: {
                     validators: {
                         stringLength: {
-                            min: 8,
+                            min: 3,
                         },
                         notEmpty: {
                             message: 'Please supply your street address'
@@ -350,8 +362,8 @@
         })
 
 
-            .on('success.form.bv', function(e) {
-                $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+            .on('success.form.bv', function (e) {
+                $('#success_message').slideDown({opacity: "show"}, "slow") // Do something ...
                 $('#reg_form').data('bootstrapValidator').resetForm();
 
                 // Prevent form submission
@@ -364,12 +376,11 @@
                 var bv = $form.data('bootstrapValidator');
 
                 // Use Ajax to submit form data
-                $.post($form.attr('action'), $form.serialize(), function(result) {
+                $.post($form.attr('action'), $form.serialize(), function (result) {
                     console.log(result);
                 }, 'json');
             });
     });
-
 
 
 </script>

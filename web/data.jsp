@@ -9,8 +9,8 @@
 <head>
     <script type="text/javascript">
         var reg = /(^[+]{1}[8]{2}[01]{1}[0-9]{9}|^[8]{2}[01]{1}[0-9]{9}|^[01]{2}[0-9]{9})$/;
-        function PhoneValidation(phoneNumber)
-        {
+
+        function PhoneValidation(phoneNumber) {
             var OK = reg.exec(phoneNumber.value);
             if (!OK)
                 window.alert("phone number isn't  valid");

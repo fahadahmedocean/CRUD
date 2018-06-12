@@ -36,12 +36,12 @@
                 <img src="logindesign/images/img-01.png" alt="IMG">
             </div>
 
-            <form class="login100-form validate-form" action="/LoginServlet" method="get">
+            <form class="login100-form validate-form" action="/#" method="get">
 					<span class="login100-form-title" style="color:darkmagenta; font-size: 50px; font-weight: bold">
 						 Login
 					</span>
 
-                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <input class="input100" type="text" name="email" placeholder="Email">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
@@ -49,7 +49,7 @@
 						</span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
                     <input class="input100" type="password" name="pass" placeholder="Password">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
@@ -84,15 +84,13 @@
 </div>
 
 
-
-
 <!--===============================================================================================-->
 <script src="logindesign/vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="logindesign/vendor/bootstrap/js/popper.js"></script>
 <script src="logindesign/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="logindesign/vendor/select2/select2.min.js"></script>
 <script src="logindesign/vendor/tilt/tilt.jquery.min.js"></script>
-<script >
+<script>
     $('.js-tilt').tilt({
         scale: 1.1
     })
