@@ -36,7 +36,7 @@
                 <img src="logindesign/images/img-01.png" alt="IMG">
             </div>
 
-            <form class="login100-form validate-form" action="registration.jsp" method="post">
+            <form class="login100-form validate-form" action="/LoginServlet" method="get">
 					<span class="login100-form-title" style="color:darkmagenta; font-size: 50px; font-weight: bold">
 						 Login
 					</span>
