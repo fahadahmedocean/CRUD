@@ -1,5 +1,7 @@
 package webapp.controller;
+
 import webapp.controller.ServiceClass;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,13 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "LoginServlet")
-public class LoginServlet extends HttpServlet {
+@WebServlet(name = "regestrationServlet")
+public class RegestrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String name = request.getParameter("first_name");
         int roll_id = Integer.parseInt(request.getParameter("last_name"));  //passing int as parameter from JSP to servlet
@@ -25,11 +24,15 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String pass = request.getParameter("password");
 
+        ServiceClass sc = new ServiceClass();
+        sc.InsertDb(name, roll_id, mobile, dept, address, zip, email, pass);
+
         PrintWriter out = response.getWriter();
-        out.print("Login-Email : "+request.getParameter("email") + "  Password : "+request.getParameter("password"));
+        out.print("Dear : " + request.getParameter("first_name") +"      Your registration process have been completed successfully  ");
 
-       ServiceClass sc=new ServiceClass();
-       sc.InsertDb(name,roll_id,mobile,dept,address,zip,email,pass);
 
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
 }

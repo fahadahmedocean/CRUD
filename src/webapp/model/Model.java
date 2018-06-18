@@ -15,8 +15,8 @@ public class Model {
     private String dept;
     private String addres;
     private int zip;
-    private  String email;
-    private  String password;
+    private String email;
+    private String password;
 
     public Model() {
     }

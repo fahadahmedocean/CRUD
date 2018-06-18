@@ -1,5 +1,6 @@
 
 package webapp.controller;
+
 import webapp.db.ConnectionClass;
 import webapp.model.Model;
 
@@ -7,26 +8,25 @@ import java.sql.SQLException;
 
 public class ServiceClass extends ConnectionClass {
 
-    public void InsertDb(String name, int roll_id,int mobile,String dept, String address, int zip, String email, String pass) {
+    public void InsertDb(String name, int roll_id, int mobile, String dept, String address, int zip, String email, String pass) {
         this.getConnection();
 
         String sql = "INSERT INTO regtable(name, roll_id, mobile, dept, address, zip, email, pass) VALUES(?, ?, ?, ?, ?, ?,?, ?)";
         try {
-            System.out.println("service class start");
             ps = connection.prepareStatement(sql);
             ps.setString(1, name);
-            ps.setInt(2,roll_id);
+            ps.setInt(2, roll_id);
             ps.setInt(3, mobile);
             ps.setString(4, dept);
             ps.setString(5, address);
-            ps.setInt(6,zip);
+            ps.setInt(6, zip);
             ps.setString(7, email);
             ps.setString(8, pass);
 
             ps.executeUpdate();
             ps.close();
             connection.close();
-            System.out.println("service class end");
+
 
         } catch (SQLException e) {
             e.printStackTrace();
