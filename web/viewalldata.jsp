@@ -28,7 +28,8 @@
 
 <%
     String name = (String) request.getAttribute("name");
-    String roll = (String) request.getAttribute("roll_id");
+    String roll_id = (String) request.getAttribute("roll_id");
+
 %>
 <table id="mytable" class="display" style="width:100%">
     <thead>
