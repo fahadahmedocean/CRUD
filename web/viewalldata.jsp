@@ -24,6 +24,12 @@
 </head>
 
 <body style="width:99%; text-align:center">
+
+
+<%
+    String name = (String) request.getAttribute("name");
+    String roll = (String) request.getAttribute("roll_id");
+%>
 <table id="mytable" class="display" style="width:100%">
     <thead>
     <tr>
@@ -39,8 +45,8 @@
     </thead>
     <tbody>
     <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
+        <td><%=name%></td>
+        <td><%=roll%></td>
         <td>Edinburgh</td>
         <td>61</td>
         <td>2011/04/25</td>

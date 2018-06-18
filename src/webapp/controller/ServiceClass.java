@@ -33,17 +33,23 @@ public class ServiceClass extends ConnectionClass {
         }
     }
 
-    public Model getFromDb() {
+    public Model viewalldb() {
         this.getConnection();
-        String sql = "select * from student";
+        String sql = "select * from regtable";
         Model uj = new Model();
         try {
             ps = connection.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                uj.setRoll_id(rs.getInt(1));
-                uj.setName(rs.getString(2));
-                uj.setEmail(rs.getString(3));
+
+                uj.setName(rs.getString(1));
+                uj.setRoll_id(rs.getInt(2));
+                uj.setMobile(rs.getInt(3));
+                uj.setDept(rs.getString(4));
+                uj.setAddres(rs.getString(5));
+                uj.setZip(rs.getInt(6));
+                uj.setEmail(rs.getString(7));
+                uj.setPassword(rs.getString(8));
             }
             ps.close();
             rs.close();
