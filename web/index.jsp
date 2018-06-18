@@ -77,9 +77,18 @@
                         Create New Account
                         <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                     </a>
+
                 </div>
             </form>
+
+            <div class="text-center p-t-20">
+
+                <form action="/ViewServlet" method="GET">
+                    <input type="submit" value="View all data"/>
+                </form>
+            </div>
         </div>
+
     </div>
 </div>
 

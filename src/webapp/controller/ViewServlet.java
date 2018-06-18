@@ -18,6 +18,7 @@ public class ViewServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Model model = new Model();
         ServiceClass sojClass = new ServiceClass();
+
         model = sojClass.viewalldb();
 
         request.setAttribute("name",model.getName());
@@ -30,6 +31,10 @@ public class ViewServlet extends HttpServlet {
         request.setAttribute("pass",model.getPassword());
 
 
+        System.out.println("hellow from view servlet");
+
+
         request.getRequestDispatcher("viewalldata.jsp").forward(request, response);
+        System.out.println("hellow from after view         jsp class");
     }
 }

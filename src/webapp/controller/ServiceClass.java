@@ -42,14 +42,14 @@ public class ServiceClass extends ConnectionClass {
             rs = ps.executeQuery();
             while (rs.next()) {
 
-                uj.setName(rs.getString(1));
-                uj.setRoll_id(rs.getInt(2));
-                uj.setMobile(rs.getInt(3));
-                uj.setDept(rs.getString(4));
-                uj.setAddres(rs.getString(5));
-                uj.setZip(rs.getInt(6));
-                uj.setEmail(rs.getString(7));
-                uj.setPassword(rs.getString(8));
+                uj.setName(rs.getString(2));
+                uj.setRoll_id(rs.getInt(3));
+                uj.setMobile(rs.getInt(4));
+                uj.setDept(rs.getString(5));
+                uj.setAddres(rs.getString(6));
+                uj.setZip(rs.getInt(7));
+                uj.setEmail(rs.getString(8));
+                uj.setPassword(rs.getString(9));
             }
             ps.close();
             rs.close();

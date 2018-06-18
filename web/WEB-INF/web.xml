@@ -21,5 +21,16 @@
         <url-pattern>/RegestrationServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ViewServlet</servlet-name>
+        <servlet-class>webapp.controller.ViewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewServlet</servlet-name>
+        <url-pattern>/ViewServlet</url-pattern>
+    </servlet-mapping>
+
+
 
 </web-app>

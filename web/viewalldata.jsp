@@ -28,7 +28,7 @@
 
 <%
     String name = (String) request.getAttribute("name");
-    String roll_id = (String) request.getAttribute("roll_id");
+    int roll_id = (Integer) request.getAttribute("roll_id");
 
 %>
 <table id="mytable" class="display" style="width:100%">
@@ -47,8 +47,8 @@
     <tbody>
     <tr>
         <td><%=name%></td>
-        <td><%=roll%></td>
-        <td>Edinburgh</td>
+        <td><%=roll_id%></td>
+        <td><%=roll_id%></td>
         <td>61</td>
         <td>2011/04/25</td>
         <td>$320,800</td>
